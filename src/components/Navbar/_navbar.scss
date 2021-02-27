@@ -1,0 +1,120 @@
+.navbar {
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        background-color: $very-soft-blue;
+    }
+
+    &-container {
+        position: relative;
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        @media screen and(max-width:1200px) {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        @media screen and (max-width: 768px) {
+            height: 105px;
+        }
+        .navbar-brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .navbar-logo {
+                width: 25px;
+                height: 25px;
+                background: $soft-blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                margin-bottom: 3px;
+            }
+            span {
+                margin-left: 12px;
+                font-weight: bold;
+                font-size: 1.2rem;
+                @media screen and (max-width: 768px) {
+                    color: $white;
+                }
+            }
+        }
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width: 768px) {
+                position: absolute;
+                left:50%;
+                transform: translateX(-50%) translateY(-150%);
+                flex-direction: column;
+                align-items: initial;
+                width: 90%;
+                top:105px;
+                text-align: center;
+                padding:0px 5% 30px;
+                opacity: 0;
+                transition: all 0.25s ease-out;
+                height: 80vh;
+                background-color: $very-soft-blue;
+                justify-content: flex-start;
+                &.active {
+                    transform:translateX(-50%) translateY(0%);
+                    opacity: 1;
+                }
+            }
+            a {
+                @media screen and (max-width: 768px) {
+                    border-top: 1px solid $grayish-blue;
+                }
+            }
+            .nav-link {
+                padding: 25px;
+                color: $very-dark-blue;
+                @media screen and(max-width:768px){
+                    color:$white;
+                }
+                &:hover {
+                    color: $soft-red;
+                }
+            }
+            .navbar-btn{
+                @include button-style($soft-red, $white, $soft-red, $soft-red, transparent);
+                @include button-size($xs-btn-width, $xs-btn-height, 100%);
+                @media screen and (max-width:768px){
+                    @include button-style(transparent, white, white, $very-dark-blue, white);
+                    height: 45px;
+                    margin-top:25px;
+                }
+            }
+            .social-links{
+                position: absolute;
+                display: none;
+                text-align: center;
+                bottom: 30px;
+                left: 50%;
+                transform:translateX(-50%);
+                a{
+                    margin:0 20px;
+                    border-top: none;
+                }
+                @media screen and (max-width:768px){
+                    display: block;
+                    
+                }
+            }
+        }
+        .burger-menu {
+            display: none;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.hero{
+    padding:80px 0;
+    &-container{
+        max-width: 1100px;
+        margin:0 auto;
+        display: flex;
+        flex-direction: row;
+        @media screen and(max-width:1200px) {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .hero-left{
+            margin-right: 120px;
+            .hero-text{
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                &-heading{
+                    font-size:3rem;
+                    color: $very-dark-blue;
+                }
+                &-description{
+                    color:$grayish-blue;
+                }
+                &-btn{
+                    margin-top:35px;
+                    .chrome-btn{
+                        @include button-style($soft-blue,$white,$soft-blue,$soft-blue, transparent);
+                        @include button-size($md-btn-width, $md-btn-height, 45px);
+                        letter-spacing: 0.5px;
+                    }
+                    .firefox-btn{
+                        margin-left:15px;
+                        @include button-style(transparent, $grayish-blue, transparent, $grayish-blue, transparent);
+                        border:none;
+                        @include button-size($md-btn-width, $md-btn-height, 45px);
+                        letter-spacing: 0.5px;
+                        &:hover{
+                            border:2px solid $grayish-blue;
+                        }
+                    }
+                }
+            }
+            
+        }
+        .hero-right{
+            width: 100%;
+            .hero-image{
+                position: relative;
+                width: 100%;
+                .hero-image-front{
+                    position: absolute;
+                    z-index: 2;
+                    max-width: 580px;
+                }
+                .hero-image-back{
+                    position: absolute;
+                    width: 100vw;
+                    height: 350px;
+                    top:100px;
+                    left: 40%;
+                    background-color: $soft-blue;
+                    border-radius: 500px;
+                }
+            }
+        }
+    }
+}
