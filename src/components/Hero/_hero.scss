@@ -1,5 +1,8 @@
 .hero{
     padding:80px 0;
+    @media screen and (max-width:992px){
+        padding:40px 0;
+    }
     &-container{
         max-width: 1100px;
         margin:0 auto;
@@ -9,35 +12,50 @@
             padding-left: 5%;
             padding-right: 5%;
         }
+        @media screen and (max-width:992px){
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
         .hero-left{
             margin-right: 120px;
+            @media screen and (max-width:992px){
+                width: 100%;
+            }
             .hero-text{
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column;
+                @media screen and (max-width:992px){
+                    align-items: center;
+                    text-align: center;
+                }
                 &-heading{
-                    font-size:3rem;
+                    font-size:45px;
                     color: $very-dark-blue;
+                    @media screen and (max-width:576px){
+                        margin-bottom: 10px;
+                        font-size:28px;
+                    }
                 }
                 &-description{
                     color:$grayish-blue;
+                    font-size:16px;
+
                 }
                 &-btn{
-                    margin-top:35px;
+                    margin-top:30px;
                     .chrome-btn{
-                        @include button-style($soft-blue,$white,$soft-blue,$soft-blue, transparent);
-                        @include button-size($md-btn-width, $md-btn-height, 45px);
-                        letter-spacing: 0.5px;
+                        @include btn-secondary;
+                        @include btn-medium;
                     }
                     .firefox-btn{
                         margin-left:15px;
-                        @include button-style(transparent, $grayish-blue, transparent, $grayish-blue, transparent);
-                        border:none;
-                        @include button-size($md-btn-width, $md-btn-height, 45px);
-                        letter-spacing: 0.5px;
-                        &:hover{
-                            border:2px solid $grayish-blue;
+                        @include btn-tertiary;
+                        @include btn-medium;
+                        @media screen and (max-width:350px){
+                            margin-left:0;
+                            margin-top:10px;
                         }
                     }
                 }
@@ -46,6 +64,10 @@
         }
         .hero-right{
             width: 100%;
+            margin-bottom: -40px;
+            @media screen and (max-width:992px){
+                height: 300px;
+            }
             .hero-image{
                 position: relative;
                 width: 100%;
@@ -53,15 +75,35 @@
                     position: absolute;
                     z-index: 2;
                     max-width: 580px;
+                    @media screen and (max-width:992px){
+                        min-width: 200px;
+                        max-width: 400px;
+                        margin:0 auto;
+                        left:50%;
+                        transform: translateX(-50%);
+                    }
+                    @media screen and (max-width:576px){
+                        min-width: 200px;
+                        max-width: 90%;
+                        
+                    }
+                    @media screen and (max-width:350px){
+                        min-width: 300px;
+                        max-width: 100%;
+                        
+                    }
                 }
                 .hero-image-back{
                     position: absolute;
                     width: 100vw;
                     height: 350px;
-                    top:100px;
+                    top:50px;
                     left: 40%;
                     background-color: $soft-blue;
                     border-radius: 500px;
+                    @media screen and (max-width:992px){
+                        height: 200px;
+                    }
                 }
             }
         }
