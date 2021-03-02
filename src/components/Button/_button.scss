@@ -4,7 +4,7 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.25s ease-out, color 0.25s ease-out;
-    box-shadow: 2px 4px 5px $grayish-blue;
+    box-shadow: 0px 10px 20px 1px rgba(0,0,0,0.10);
     font-weight: normal;
     letter-spacing: 1px;
     font-family: 'Rubik', sans-serif;
@@ -58,7 +58,7 @@
     }
 }
 
-@mixin btn-larger{
+@mixin btn-large{
         width: 230px;
         height: 45px;
         @media screen and (max-width:768px){

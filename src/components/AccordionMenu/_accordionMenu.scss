@@ -1,0 +1,47 @@
+.faq-accordion-container{
+    display: flex;
+    justify-content: center;
+    .faq-question {
+        max-width: 550px;
+        width: 100%;
+        border-bottom: 1px solid $very-grayish-blue;
+        .faq-question-button {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border: none;
+            background-color: transparent;
+            padding: 0px;
+            cursor: pointer;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            font-size:16px;
+            color: $very-dark-blue;
+            letter-spacing: 1px;
+            text-align: left;
+            &::after {
+                content: url(../../assets/images/icon-arrow.svg);
+                margin-right: 17px;
+                transform: rotate(0deg);
+                transition: transform 300ms ease-out;
+            }
+            &:hover {
+                color: $soft-red;
+            }
+        }
+        .faq-description {
+            padding-right: 17px;
+            margin-top: 0;
+            margin-bottom: 0;
+            height: 0;
+            overflow: hidden;
+            transition: all 200ms ease-out;
+            color: $grayish-blue;
+            &.show-description{
+                margin:25px 0 35px;
+                margin-left: -40px;
+                height: 100%;
+            }
+        }
+    }
+}

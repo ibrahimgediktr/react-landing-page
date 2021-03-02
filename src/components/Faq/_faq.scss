@@ -1,24 +1,25 @@
-.features {
-    padding: 80px 0;
+.faq {
+    padding: 60px 0;
     @media screen and(max-width:992px) {
-        padding: 40px 0;
+        padding: 30px 0;
     }
     &-container {
         max-width: 1100px;
         margin: 0 auto;
-        @media screen and (max-width: 1200px) {
+        @media screen and(max-width:1200px) {
             padding-left: 5%;
             padding-right: 5%;
         }
-        .features-header {
+        .faq-header {
             max-width: 550px;
             margin: 0 auto;
             width: 100%;
-            .features-heading {
+            margin-bottom: 40px;
+            .faq-heading {
                 text-align: center;
                 color: $very-dark-blue;
             }
-            .features-description {
+            .faq-description {
                 text-align: center;
                 color: $grayish-blue;
                 line-height: 1.5;
