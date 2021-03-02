@@ -1,0 +1,27 @@
+.features {
+    padding: 80px 0;
+    @media screen and(max-width:992px) {
+        padding: 40px 0;
+    }
+    &-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        @media screen and (max-width: 1200px) {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .features-header {
+            max-width: 550px;
+            margin: 0 auto;
+            .features-heading {
+                text-align: center;
+                color: $very-dark-blue;
+            }
+            .features-description {
+                text-align: center;
+                color: $grayish-blue;
+                line-height: 1.5;
+            }
+        }
+    }
+}

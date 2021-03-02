@@ -5,8 +5,9 @@
     cursor: pointer;
     transition: background-color 0.25s ease-out, color 0.25s ease-out;
     box-shadow: 2px 4px 5px $grayish-blue;
-    font-weight: bold;
+    font-weight: normal;
     letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif;
 }
 
 @mixin btn-primary {
@@ -64,22 +65,3 @@
             width: 150px;
         }
 }
-
-
-// @mixin button-style($btn-background, $btn-color, $btn-border, $btn-hover, $btn-hover-bg) {
-//     background: $btn-background;
-//     color: $btn-color;
-//     border: 2px solid $btn-border;
-//     &:hover {
-//         background: $btn-hover-bg;
-//         color: $btn-hover;
-//     }
-// }
-
-// @mixin button-size($btn-width, $btn-height, $btn-responsive) {
-//     width: $btn-width;
-//     height: $btn-height;
-//     @media screen and (max-width: 768px) {
-//         width: $btn-responsive;
-//     }
-// }
