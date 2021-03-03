@@ -20,3 +20,10 @@ button{
   font-family: 'Rubik', sans-serif;
 
 }
+
+.Home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
