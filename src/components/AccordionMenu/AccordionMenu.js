@@ -28,10 +28,11 @@ function AccordionMenu() {
 
   const renderedQuestionsAnswer = questionsAnswer.map((item, index) => {
     const showDescription = index === activeIndex ? "show-description" : "";
+    const iconTransform = index === activeIndex ? "rotate" : "";
     const ariaExpanded = index === activeIndex ? "true" : "false";
     return (
-      <div className="faq-accordion-container"  key={index}>
-        <div className="faq-question" >
+      <div className="faq-accordion-container" key={index}>
+        <div className="faq-question">
           <dt>
             <button
               aria-expanded={ariaExpanded}
@@ -40,7 +41,7 @@ function AccordionMenu() {
               onClick={() => {
                 setActiveIndex(index);
               }}
-              className="faq-question-button"
+              className={`faq-question-button ${iconTransform}`}
             >
               {item.question}
             </button>

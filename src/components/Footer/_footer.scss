@@ -1,0 +1,28 @@
+.footer {
+    background-color: $soft-blue;
+    &-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        @media screen and(max-width:1200px) {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .footer-top {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 65px 0;
+            &-description {
+                letter-spacing: 2px;
+                color: $white;
+                text-align: center;
+            }
+            &-heading {
+                color: $white;
+                letter-spacing: 1.2px;
+                font-weight: normal;
+                text-align: center;
+            }
+        }
+    }
+}

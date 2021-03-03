@@ -1,4 +1,4 @@
-.faq-accordion-container{
+.faq-accordion-container {
     display: flex;
     justify-content: center;
     .faq-question {
@@ -15,15 +15,22 @@
             cursor: pointer;
             padding-top: 18px;
             padding-bottom: 18px;
-            font-size:16px;
+            font-size: 16px;
             color: $very-dark-blue;
             letter-spacing: 1px;
             text-align: left;
+            padding-left: 5px;
+            padding-right: 5px;
             &::after {
                 content: url(../../assets/images/icon-arrow.svg);
                 margin-right: 17px;
                 transform: rotate(0deg);
-                transition: transform 300ms ease-out;
+                transition: transform 200ms ease-out;
+            }
+            &.rotate{
+                &::after{
+                    transform: rotate(180deg);
+                }
             }
             &:hover {
                 color: $soft-red;
@@ -35,11 +42,13 @@
             margin-bottom: 0;
             height: 0;
             overflow: hidden;
-            transition: all 200ms ease-out;
+            transition: all 300ms ease-out;
             color: $grayish-blue;
-            &.show-description{
-                margin:25px 0 35px;
-                margin-left: -40px;
+            margin-left: -40px;
+            line-height: 1.7;
+            &.show-description {
+                margin-top: 25px;
+                margin-bottom: 35px;
                 height: 100%;
             }
         }
