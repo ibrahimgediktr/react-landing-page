@@ -30,7 +30,6 @@
             }
             &.active-tabs {
                 background: white;
-                // border-bottom: 1px solid $very-grayish-blue;
                 color: $very-dark-blue;
                 &::before {
                     content: "";
@@ -38,7 +37,7 @@
                     position: absolute;
                     bottom: 0px;
                     left: 50%;
-                    transform: translateX(-50%);
+                    transform: translateX(-50%) !important;
                     width: calc(100% + 2px);
                     height: 5px;
                     background: $soft-red;

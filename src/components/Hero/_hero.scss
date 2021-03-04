@@ -81,7 +81,7 @@
                         max-width: 400px;
                         margin:0 auto;
                         left:50%;
-                        transform: translateX(-50%);
+                        transform: translateX(-50%) !important;
                     }
                     @media screen and (max-width:576px){
                         min-width: 200px;

@@ -1,5 +1,6 @@
 import React from "react";
-import Tabs from "../Tabs/Tabs";
+// import Tabs from "../Tabs/Tabs";
+import Tabs from '../Tabs/Tabs.jsx'
 
 function Features() {
   return (
