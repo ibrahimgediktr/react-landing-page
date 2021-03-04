@@ -1,7 +1,6 @@
 .navbar {
     @media screen and (max-width: 768px) {
         width: 100%;
-        background-color: $very-soft-blue;
     }
 
     &-container {
@@ -24,6 +23,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index: 2;
             .navbar-logo {
                 width: 25px;
                 height: 25px;
@@ -38,9 +38,10 @@
                 margin-left: 12px;
                 font-weight: bold;
                 font-size: 1.2rem;
-                @media screen and (max-width: 768px) {
-                    color: $white;
-                }
+                color: $very-dark-blue;
+                // @media screen and (max-width: 768px) {
+                //     color: $white;
+                // }
             }
         }
         .nav-list {
@@ -54,7 +55,7 @@
                 flex-direction: column;
                 align-items: initial;
                 width: 90%;
-                top:105px;
+                top:0;
                 text-align: center;
                 padding:0px 5% 30px;
                 opacity: 0;
@@ -62,6 +63,8 @@
                 height: 80vh;
                 background-color: $very-soft-blue;
                 justify-content: flex-start;
+                padding-top: 105px;
+                z-index: 1;
                 &.active {
                     transform:translateX(-50%) translateY(0%);
                     opacity: 1;
@@ -108,6 +111,7 @@
             background: transparent;
             border: none;
             cursor: pointer;
+            z-index: 2;
             @media screen and (max-width: 768px) {
                 display: block;
             }

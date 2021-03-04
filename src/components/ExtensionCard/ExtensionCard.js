@@ -17,7 +17,7 @@ function ExtensionCard() {
         </div>
         <div className="extension-cards">
 
-          <Fade left delay={400}>
+          <Fade left delay={200}>
             <div className="extension-card-item">
               <img
                 className="extension-card-image"
@@ -38,7 +38,7 @@ function ExtensionCard() {
             </div>
           </Fade>
 
-          <Fade bottom delay={600}>
+          <Fade bottom delay={300}>
             <div className="extension-card-item">
               <img
                 className="extension-card-image"
@@ -59,7 +59,7 @@ function ExtensionCard() {
             </div>
           </Fade>
 
-          <Fade right delay={800}>
+          <Fade right delay={400}>
             <div className="extension-card-item">
               <img
                 className="extension-card-image"
