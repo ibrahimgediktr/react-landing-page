@@ -6,7 +6,7 @@ function Contact() {
   return (
     <section className="contact">
       <div className="contact-container">
-        <Bounce bottom cascade>
+        <Bounce top cascade>
           <div className="contact-header">
             <p className="contact-header-description">35.000+ ALREADY JOINED</p>
             <h2 className="contact-header-heading">
