@@ -20,7 +20,7 @@ function EmailForm() {
           name="email"
           placeholder="Enter your email adress"
           ref={register({ required: true, pattern: /^\S+@\S+$/i })}
-          formNoValidate="true"
+          formNoValidate={true}
         />
         {errors.email && (
           <div className="error-message">Whoops, make sure it's an email</div>

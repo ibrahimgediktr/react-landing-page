@@ -14,17 +14,17 @@ function Footer() {
           <span>BOOKMARKS</span>
         </Link>
         <div className="footer-nav">
-          <a href="">FEATURES</a>
-          <a href="">PRICING</a>
-          <a href="">CONTACT</a>
+          <Link to="/features" className="footer-link">FEATURES</Link>
+          <Link to="/pricing" className="footer-link">PRICING</Link>
+          <Link to="/contact" className="footer-link">CONTACT</Link>
         </div>
         <div className="footer-social-link">
-          <a href="">
+          <Link to="/">
             <AiFillFacebook size={30} style={{ color: "white" }} />
-          </a>
-          <a href="">
+          </Link>
+          <Link to="/">
             <AiOutlineTwitter size={30} style={{ color: "white" }} />
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

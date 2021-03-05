@@ -22,25 +22,25 @@ function Navbar() {
           <span style={click ? {color:"white"} : {color:"initial"}}>BOOKMARKS</span>
         </Link>
         <div className={click ? "nav-list active" : "nav-list"}>
-          <a href="" className="nav-link">
+          <Link to="/features" className="nav-link">
             FEATURES
-          </a>
-          <a href="" className="nav-link">
+          </Link>
+          <Link href="/pricing" className="nav-link">
             PRICING
-          </a>
-          <a href="" className="nav-link">
+          </Link>
+          <Link to="/contact" className="nav-link">
             CONTACT
-          </a>
+          </Link>
           <Link to="/login" className="login-btn">
             <button className="btn navbar-btn">LOGIN</button>
           </Link>
           <div className="social-links">
-            <a href="">
+            <Link to="/" className="social-link">
               <AiFillFacebook size={30} style={{ color: "white" }} />
-            </a>
-            <a href="">
+            </Link>
+            <Link to="/" className="social-link">
               <AiOutlineTwitter size={30} style={{ color: "white" }} />
-            </a>
+            </Link>
           </div>
         </div>
         <button onClick={handleClick} className="burger-menu">
