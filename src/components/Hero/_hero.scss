@@ -34,6 +34,7 @@
                 &-heading{
                     font-size:45px;
                     color: $very-dark-blue;
+                    letter-spacing: 1px;
                     @media screen and (max-width:576px){
                         margin-bottom: 10px;
                         font-size:28px;
@@ -42,6 +43,8 @@
                 &-description{
                     color:$grayish-blue;
                     font-size:16px;
+                    letter-spacing: 1;
+                    line-height: 1.6;
 
                 }
                 &-btn{

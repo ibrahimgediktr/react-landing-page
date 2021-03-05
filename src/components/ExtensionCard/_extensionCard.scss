@@ -21,7 +21,7 @@
             .extension-card-description {
                 text-align: center;
                 color: $grayish-blue;
-                line-height: 1.5;
+                line-height: 1.6;
             }
         }
         .extension-cards {
@@ -72,6 +72,7 @@
                 }
                 @media screen and (max-width:350px){
                     width: 90%;
+                    padding: 15px;
                 }
                 &::after{
                     content: url("../../assets/images/bg-dots.svg");
